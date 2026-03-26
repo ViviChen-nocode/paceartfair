@@ -16,7 +16,32 @@
 
 /* ===== Reset ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; cursor: none; }
+
+/* ===== Custom Cursor ===== */
+.cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: var(--wood);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, opacity 0.3s;
+  opacity: 0;
+  mix-blend-mode: multiply;
+}
+.cursor.visible { opacity: 1; }
+.cursor.hovering {
+  transform: translate(-50%, -50%) scale(2.5);
+  opacity: 0.4;
+}
+
+@media (pointer: coarse) {
+  html { cursor: auto; }
+  .cursor { display: none; }
+}
 body {
   font-family: var(--body);
   font-weight: 400;
