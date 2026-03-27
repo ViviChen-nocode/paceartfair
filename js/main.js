@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     };
 
+    document.getElementById('carouselPrev').addEventListener('click', () => {
+      goTo((current - 1 + slides.length) % slides.length);
+    });
+    document.getElementById('carouselNext').addEventListener('click', () => {
+      goTo((current + 1) % slides.length);
+    });
+
     setInterval(() => goTo((current + 1) % slides.length), 4000);
   }
 
