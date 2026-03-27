@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Rounded P shape inspired by the hand-drawn logo -->
+  <path d="M20 56 C20 56 20 12 20 12 C20 6 26 4 32 4 C44 4 50 10 50 20 C50 30 44 36 32 36 C28 36 24 34 20 32"
+    fill="none" stroke="#1a1714" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Small petal/heart inside the P bowl -->
+  <path d="M33 16 C35 14 38 14 38 17 C38 20 33 23 33 23 C33 23 28 20 28 17 C28 14 31 14 33 16Z"
+    fill="#1a1714"/>
+</svg>
