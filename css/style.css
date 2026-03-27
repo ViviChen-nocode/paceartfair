@@ -287,20 +287,26 @@ ul { list-style: none; }
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: rgba(255,255,255,0.3);
-  font-size: 2rem;
+  color: rgba(255,255,255,0.35);
+  font-size: 5rem;
   font-family: var(--display);
+  font-weight: 300;
   cursor: none;
-  padding: 16px 12px;
+  padding: 20px 16px;
   z-index: 2;
   transition: color 0.3s;
   line-height: 1;
 }
 .carousel-arrow:hover {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.85);
 }
-.carousel-prev { left: 0; }
-.carousel-next { right: 0; }
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+
+@media (max-width: 680px) {
+  .carousel-prev { left: 12px; }
+  .carousel-next { right: 12px; }
+}
 
 .carousel-dot {
   width: 6px;
